@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Geometry</title>
+</head>
+<body>
+    <!-- <div id="canvas"></div> -->
+
+    <div id='controls-wrapper'>
+        <form name='formGeometry'>
+            <select name='geometry'> 
+                <option value='cube'>Cube</option>
+                <option value='circle'>Circle</option>
+                <option value='dodecahedron'>Dodecahedron</option>
+                <option value='sphere'>Sphere</option>
+                <option value='icosahedron'>Icosahedron</option>
+                <option value='octahedron'>Octahedron</option>
+                <option value='tetrahedron'>Tetrahedron</option>
+                <option value='torus'>Torus</option>
+                <option value='torusknot'>Torus Knot</option>
+            </select>
+            <button>Display Shape</button>
+            <h4>*Drag to move camera<br/>*Scroll to zoom</h4>
+        <form>
+    </div>
+
+<script src='./three.js'></script>  
+<script src="OBJLoader.js"></script>
+<script src='./OrbitControls.js'></script>  
+<script src='AnaglyphEffect.js'></script>
+<script src='TGALoader.js'></script>
+
+<script src='./app.js'></script>
+</body>
+</html>
